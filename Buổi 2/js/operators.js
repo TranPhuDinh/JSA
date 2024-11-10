@@ -53,5 +53,21 @@
 
 // *** not:tra ve phu dinh
 // var result = !("" & 0 & "A");
-var result = !(false && false) || true;
-console.log("resulut",result);
+// var result = !(false && false) || true;
+// console.log("resulut",result); 
+
+// Toan tu 3 ngoi ------------------------------
+// const func = () => "a";
+// function func() {
+//   return "a";
+// }
+
+let a;
+if (a) a = "abc";
+else a = 123;
+
+const b = a ? (a = "abc") : (a = 123);
+// <dieu kien> ? <true> : <false>
+
+let arr;
+arr?.forEach((item) => console.log(item));
