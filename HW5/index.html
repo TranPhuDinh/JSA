@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hồ Sơ Cá Nhân</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Tạo Hồ Sơ Cá Nhân</h1>
+  <form id="profileForm">
+    <label for="name">Họ tên</label>
+    <input type="text" id="name" placeholder="Nhập họ tên" required>
+    
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Nhập email" required>
+    
+    <label for="phone">Số điện thoại</label>
+    <input type="tel" id="phone" placeholder="Nhập số điện thoại" required>
+    
+    <label for="address">Địa chỉ</label>
+    <input type="text" id="address" placeholder="Nhập địa chỉ" required>
+    
+    <label for="avatar">URL ảnh đại diện</label>
+    <input type="url" id="avatar" placeholder="Nhập URL ảnh đại diện" required>
+    
+    <button type="submit">Lưu thông tin</button>
+  </form>
+
+  <div class="profile" id="profileDisplay" style="display: none;">
+    <h2>Thông Tin Cá Nhân</h2>
+    <img id="profileAvatar" alt="Ảnh đại diện">
+    <p><strong>Họ tên:</strong> <span id="profileName"></span></p>
+    <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+    <p><strong>Số điện thoại:</strong> <span id="profilePhone"></span></p>
+    <p><strong>Địa chỉ:</strong> <span id="profileAddress"></span></p>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
